@@ -1,0 +1,309 @@
+/* *{
+    border-style: none;
+
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: red;
+
+}
+.mainprincipal{
+    margin-top: 400px;
+    border-style: solid;
+    border-color: beige;
+    height: 500vh;
+    width: 100%;
+    background-color:white;
+}
+
+header{
+    margin-top: -400px;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color:  #04167a;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+.logo{
+    background-image:url("../imagenes/logomariareparada.jpeg");
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    border-radius: 8rem;
+
+
+}
+.bars{
+    display: none;
+    color: #f0f0f0;
+}
+.nav-bar ul{
+    display: flex;
+
+}
+.nav-bar ul li a{
+    display: block;
+    color: #f1f1ea;
+    font-size: 12px;
+    padding:8px 20px;
+    border-radius: 15px;
+    transition:0.2s ;
+    margin: 0 5px;
+
+
+}
+.nav-bar ul li a:hover{
+    background-color: #9900ff;
+}
+
+
+
+#contenedor_imagen img{
+
+    z-index: -999;
+    margin-top: -390px ;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vw;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.servicios {
+    padding: 1rem;
+    margin-top: 0rem;
+    flex-wrap: wrap;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carta {
+
+    display: block;
+    width: 12rem;
+    height: 12em;
+    justify-content: space-between;
+    display: grid;
+
+}
+#carta{
+
+    background-color: #0c66bb;
+
+}
+#carta2{
+
+    background-color:#37c281cb;
+}
+#carta3{
+
+    background-color: #f58607af;
+}
+#carta4{
+
+    background-color: #d30808af;
+}
+#carta5{
+
+    background-color: #0c66bb;
+}
+
+img {
+
+  height: 5rem;
+  width: 16rem;
+  height: 90px;
+  width: 90px;
+
+}
+
+
+.carta .numero{
+    font-size: 60px;
+    margin-left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #edf3f3;
+    height: 60px;
+    width: 60px;
+}
+
+
+.titulo-video{
+    font-size: 40px;
+    color: rgb(54, 9, 219);
+    padding: 5rem;
+   text-align: center;
+
+}
+.video-ayuda {
+    flex-wrap: wrap;
+    display: flex;
+    height: 280%;
+    width: 100%;
+    justify-content: center;
+
+
+}
+
+.video {
+
+    margin: 16px;
+    width: 17rem;
+    height: 16rem;
+    border-radius: 1rem;
+    border-style: groove;
+    border-color: rgb(20, 1, 17);
+    justify-content: center;
+    display: flex;
+}
+
+.video1 {
+    justify-content: center;
+    width: 17rem;
+    height: 9rem;
+
+
+}
+
+.video2 {
+    justify-content: center;
+    width: 17rem;
+    height: 9rem;
+
+
+}
+
+.video3 {
+    width: 17rem;
+    height: 9rem;
+
+
+}
+
+.video-ayuda P {
+    color: rgba(241, 235, 235, 0.829);
+    text-align: center;
+
+}
+
+.video4 {
+
+    justify-content: center;
+    width: 17rem;
+    height: 9rem;
+
+
+}
+.sobrenosotros{
+    display: grid;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(190, 240, 9);
+
+}
+.cartasobrenosotros{
+    height: 100%;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: red;
+
+}
+
+footer{
+ width: 100%;
+    background-color: #004c4c;
+    color: white;
+}
+
+
+@media(max-width:500px){
+    header{
+        position:fixed;
+        transition: 0.5s;
+
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bar .line{
+        will-change: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 6px 0px;
+
+    }
+    .nav-bar {
+        height:0px;
+        position: absolute;
+        top: 60px;
+
+        right: 2px;
+        width: 40vw ;
+        background-color: #0b238da1;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+    height: 200px;
+
+    }
+    .nav-bar ul{
+    display: block;
+    width: fit-content;
+    margin: 20px auto  auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+    }
+    .nav-bar.active ul {
+    opacity: 1;
+
+    }
+    .nav-bar ul li a{
+    margin-bottom: 2px;
+
+    }
+    .carta{
+        width: 100%;
+        height: 12em;
+        border-radius: 0%;
+        justify-content: center;
+        display: grid;
+        position: relative;
+    }
+    .video{
+        border-style: solid;
+        border-color: green;
+    }
+
+    footer{
+        width: 100%;
+        display: grid;
+        font-size: 12px;
+    }
+
+
+} */
